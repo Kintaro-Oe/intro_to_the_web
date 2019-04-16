@@ -1,4 +1,10 @@
-<h1>My name is <%= ["Amigo","Oscar","Viking"].sample %></h1>
+<% if @name %>
+<h1>My name is <%= @name %></h1>
+<% end %>
+<form action='/named-cat' method='get'>
+<input type='text' name='name'>
+<input type='submit' value='Submit!'>
+</form>
 <div style='border: 4px dashed red;width:600px;'>
 <img style='width: 100%;' src='http://bit.ly/1eze8aE'>
 </div>
